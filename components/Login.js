@@ -33,7 +33,7 @@ export class Login extends React.Component
     render() {
         return (
           <View style={loginStyle.container}>
-            <Text>Login Screen</Text>
+            <Text>Login Screen Seen</Text>
             <Setting></Setting>
             
           </View>
