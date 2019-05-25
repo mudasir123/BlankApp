@@ -1,6 +1,5 @@
 # BlankApp
 
-#Commit file to git hub for first time.
 1)git init
 
 2) git add .
@@ -14,8 +13,3 @@ Upload of project from scratch require git pull origin master.
 5) git pull origin master
 
 6) git push origin master
-
-#Change files.
-1) git add .
-2) git push origin master
-3) git commit -m "Add all my files"
