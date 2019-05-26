@@ -15,6 +15,7 @@ const RootStack = createStackNavigator(
     },
     LoginScreen:{
       screen:Login
+     
     }
   },
   {

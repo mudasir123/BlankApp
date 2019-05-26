@@ -1,22 +1,26 @@
 import React from "react";
-import { View, Text, Button } from 'react-native';
+import { View, Text,StatusBar,ImageBackground,TextInput } from 'react-native';
+import { Button } from "native-base";
 import loginStyle from "../res/Styles/loginStyle"
 import Setting from "../components/Setting"
 import colors from "../res/Colors/colors"
 
+
 export class Login extends React.Component
 {
+
     static navigationOptions =
    {
-      title: 'Login',
+    //   title: 'Login',
  
-      headerStyle: {
+    //   headerStyle: {
  
-      backgroundColor: colors.navBarBackground
+    //   backgroundColor: colors.navBarBackground
  
-    },
+    // },
  
-    headerTintColor: '#fff',
+    // headerTintColor: '#fff',
+    header:null
  
  };
    
@@ -30,13 +34,26 @@ export class Login extends React.Component
           
     //     }
     // }
+
     render() {
+     const loginBackgroundImage=require('../assets/loginBG.png')
+
         return (
-          <View style={loginStyle.container}>
-            <Text>Login Screen Seen</Text>
-            <Setting></Setting>
+          <ImageBackground style={loginStyle.BackgroundLW} source={loginBackgroundImage} >
             
-          </View>
+             <View style={loginStyle.container}>
+               
+               <TextInput style={[loginStyle.inputField ,loginStyle.marginBottomContent]}   placeholderTextColor={colors.lightBlue} maxLength={25}  placeholder="Email" ></TextInput>
+               <TextInput style={[loginStyle.inputField,loginStyle.marginBottomContent]}  placeholderTextColor={colors.lightBlue} maxLength={25}  placeholder="Password" ></TextInput>
+
+               
+              <Text >Login Screen Seen</Text>
+            
+            
+             </View>
+            </ImageBackground>
+
+         
         )
       }
 
