@@ -23,9 +23,15 @@ const loginStyle=StyleSheet.create(
        borderWidth:1,
        paddingLeft:10,
        paddingRight:10,
-       borderRadius:20,
+       borderRadius:20
+   },
+   marginBottomContent:{
        marginBottom:10
+   },
+   ButtonRound:{
+     
    }
+
 
 
 }
