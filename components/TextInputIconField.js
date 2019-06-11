@@ -8,8 +8,8 @@ export class TextInputIconField extends React.Component
     {
         return(
             <View style={[componentStyle.TextInputIconView]}>
-            <TextInput placeholder="hello" style={{flex:5}}></TextInput>
-            <Image style={{width:25,height:25}} source={require("../assets/icon.png")}></Image>
+            <TextInput placeholder="hello" style={{}}></TextInput>
+            <Image style={{width:25,height:25,}} source={require("../assets/icons/mail.png")}></Image>
 
             </View>
         )

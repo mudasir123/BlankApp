@@ -9,12 +9,12 @@ const componentStyle=StyleSheet.create(
                height:40,
                width:'60%',
                color:'white',
-               borderColor:colors.lightBlue,
+               borderColor:colors.white,
                borderWidth:1,
                paddingLeft:10,
                paddingRight:10,
                borderRadius:20,
-               justifyContent: 'center', alignItems: 'center'
+               justifyContent: "space-between", alignItems: 'center'
   }
 
 }

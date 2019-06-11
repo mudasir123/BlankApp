@@ -19,7 +19,7 @@ const loginStyle=StyleSheet.create(
        height:40,
        width:'60%',
        color:'white',
-       borderColor:colors.lightBlue,
+       borderColor:colors.white,
        borderWidth:1,
        paddingLeft:10,
        paddingRight:10,
