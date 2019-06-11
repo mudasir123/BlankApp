@@ -2,8 +2,9 @@ import React from "react";
 import { View, Text,StatusBar,ImageBackground,TextInput } from 'react-native';
 import { Button } from "native-base";
 import loginStyle from "../res/Styles/loginStyle"
-import Setting from "../components/Setting"
+import Setting from "./Setting"
 import colors from "../res/Colors/colors"
+import { TextInputIconField } from "../components/TextInputIconField";
 
 
 export class Login extends React.Component
@@ -45,7 +46,7 @@ export class Login extends React.Component
                
                <TextInput style={[loginStyle.inputField ,loginStyle.marginBottomContent]}   placeholderTextColor={colors.lightBlue} maxLength={25}  placeholder="Email" ></TextInput>
                <TextInput style={[loginStyle.inputField,loginStyle.marginBottomContent]}  placeholderTextColor={colors.lightBlue} maxLength={25}  placeholder="Password" ></TextInput>
-
+               <TextInputIconField ></TextInputIconField>
                
               <Text >Login Screen Seen</Text>
             

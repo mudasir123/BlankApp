@@ -1,9 +1,10 @@
 import React from 'react';
 import { StyleSheet, Text, View,Button } from 'react-native';
 import { createStackNavigator, createAppContainer } from "react-navigation";
-import  Setting  from "./components/Setting";
-import  Home  from "./components/Home";
-import  Login from "./components/Login"
+import  Setting  from "./screens/Setting";
+import  Home  from "./screens/Home";
+import  Login from "./screens/Login"
+import colors from './res/Colors/colors';
 
 const RootStack = createStackNavigator(
   {
@@ -40,7 +41,10 @@ export  class App extends React.Component {
 
   // }
   render() {
-    return <RootStack />;
+    return (
+    <RootStack />
+      //<View style={{width:50,height:50,backgroundColor:colors.black}}></View>
+      )
   }
 }
 
